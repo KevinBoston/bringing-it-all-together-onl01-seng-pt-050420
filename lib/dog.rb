@@ -65,8 +65,9 @@ class Dog
       WHERE name = ?
       LIMIT 1 
       SQL
-    DB[:conn].execute(sql, name).map {|row|self.create
+    DB[:conn].execute(sql, name).map {|row|self.find
     
+  end
 
 
 end
